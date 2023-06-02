@@ -1,27 +1,21 @@
-.navbar{
-    padding: 25px;
+div.navbar{
+    padding :25px; 
     background-color:#00008B;
-    
-    
 }
 .site-name{
+  
     color: white;
-    
-}
-.site-menu{
-    color: white;
-    text-align: left;
-    margin: 0px,10px;
-}
-
-
+ }
+ 
 *{
     text-decoration:none;
     margin: 1px 5px;
  }
- .foot{
+
+
+.foot{
     background-color:#00008B;
-    padding:35px;
+    padding:20px;
     position: absolute;
     right: 0;
     left: 0;
@@ -33,4 +27,43 @@
 }
 .foot2{
     text-align: center;
+}
+ul{
+    padding: 0px 10px;
+    list-style-type: none;
+    background-color: #00008B;
+    margin-top: 0;
+}
+ul li{
+    display: inline-block;
+    position: relative;
+    line-height: 20px;
+    text-align: left;
+
+}
+
+
+
+ul li a{
+    display: block;
+    padding: 0px 10px;
+    color: white;
+    text-decoration: none;
+}
+
+ul li ul.none{
+    min-width: 100%;
+    background-color: #00008B;
+    color: white;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+}
+ul li:hover ul.none{
+    display: block;
+}
+ul li a:hover{
+    color:black;
+   background-color: black;
 }

@@ -7,13 +7,18 @@ import { auditcomponent } from './audit/audit.component';
 import { homecomponent } from './home/home.component';
 import { logoutcomponent } from './logout/logout.component';
 import { parameterscomponent } from './parameters/parameters.component';
-
+import { archivecomponent } from './archive/archive.component';
+import { inpmcomponent } from './inpm/inpm.component';
+import { inpmicomponent } from './inpmi/inpmi.component';
 const appRoute: Routes = [
   {path: '',component: homecomponent},
   {path: 'HOME',component: homecomponent},
   {path: 'AUDIT',component: auditcomponent},
   {path: 'PARAMETERS',component: parameterscomponent},
-  {path: 'LOGOUT',component: logoutcomponent}
+  {path: 'LOGOUT',component: logoutcomponent},
+  {path: 'Archive-Screen',component: archivecomponent},
+  {path: 'INPM-Pockets',component: inpmcomponent},
+  {path: 'INPM-Inserts',component: inpmicomponent}
 ]
 
 
@@ -24,7 +29,10 @@ const appRoute: Routes = [
     auditcomponent,
     homecomponent,
     logoutcomponent,
-    parameterscomponent
+    parameterscomponent,
+    archivecomponent,
+    inpmcomponent,
+    inpmicomponent
   ],
   imports: [
     BrowserModule,
